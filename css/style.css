@@ -1,0 +1,343 @@
+
+
+html,body{
+    
+    font-family: 'Quicksand','Arial','sans-serif';
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+ul, ol {padding:0; margin: 0}
+
+/* -------------------*/
+/* FIRST PAGE*/
+/* -------------------*/
+header{
+    background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.8)),url(img/hero-image.jpg);
+    background-size:cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main-nav {
+    list-style: none;
+    float: right;
+
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-top: 10%;
+    margin-right: 80px;
+    color: #fff;
+    padding: 15px;
+    font-size: 130%;
+    font-weight:400;
+    
+}
+
+.white-logo{
+    width: auto;
+    height: 180px;
+    margin-left:8%;
+    margin-top: 2%;
+    float: left;  
+}
+
+.first-page{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/* -------------------*/
+/* TEXT*/
+/* -------------------*/
+
+h1{
+    text-transform: uppercase;
+    font-size: 500%;
+    color: #fff;
+    word-spacing: 6px;
+}
+
+h1:after{
+display:block;
+height:8px;
+width: 783px;
+content:" ";
+background-color: #6BB9F0;    
+    
+    
+}
+
+
+h2{
+    font-size: 300%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2a2929;
+    margin:0;
+    padding-top:20px;
+    
+}
+        
+h2:after{
+    display:block;
+    height:5px;
+    background-color: #6BB9F0;
+    content:" ";
+    width:200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3{
+    text-align: center;
+    margin: 70,0;
+    font-size: 120%;
+    font-weight:500;    
+    
+}
+
+/* -------------------*/
+/* MAIN NAVIGATION*/
+/* -------------------*/
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+    
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 3px solid #6BB9F0;  
+}
+
+/* -------------------*/
+/* ABOUT SECTION*/
+/* -------------------*/
+
+.about-section{
+    background-color: #f7f7f7;
+    position: relative;
+    
+}
+
+.about-section h3{
+    background-color: #f7f7f7;
+    margin-bottom: 0;
+    padding: 2% 15% 2% 15%;
+}
+.display-box{
+    position: relative;
+}
+
+.display-box li{
+    list-style: none;
+    width:25%;
+    float:left;
+}
+.countries{
+    background-color: #2a2929;
+    overflow: hidden;
+    position: relative;
+}
+.location{
+    margin:0;
+}
+
+.location img{
+    width:100%;
+    height: auto; 
+    opacity: 0.5;  
+    cursor: pointer; 
+}
+
+.location img:hover{
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.03);
+}
+
+.cover{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6bb9f07c;
+    z-index: -5;
+    visibility: hidden;
+}
+
+.cover-container{
+    width: 50%;
+    height: 50%;
+    margin: 10% auto;
+    background: #f7f7f7;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+.cover-container i{
+    position: absolute;
+    width: 50px;
+    margin-left: 46%;
+    margin-top: -90px;
+}
+
+.cover-content{
+    display: block;
+    padding:80px;
+}
+.show-cover{
+    z-index: 5;
+    visibility: visible;
+}
+
+/* -------------------*/
+/* HOW SECTION*/
+/* -------------------*/
+
+
+.how-container{
+    width:100%;
+    display: table;
+        
+}
+
+.how-box{
+    width: 25%;
+    float:left;
+    display: block;
+    background-color: #f7f7f7;
+    border-radius:10%;
+    margin:50px 0px 50px 120px;
+    box-shadow: #cecbf5 2px 2px 2px;
+    
+        
+}
+
+.how-title{
+    color: #6BB9F0;
+    margin-left: 40%;
+    margin-top: 30px;
+
+}
+
+
+.how-box div{
+    font-size: 230%;
+    font-weight: 500;
+    
+}
+
+
+.how-box p{
+    margin: 30px;
+}
+
+/* -------------------*/
+/* WHO SECTION*/
+/* -------------------*/
+
+.section-who{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgb(0, 0, 0, 0.8)),url(img/feedback-image.jpg);
+    background-size:cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.who-container{
+    width:80%;
+    margin: 0 auto;
+    
+}
+
+.testimony{
+    color: #fff;
+}
+
+.who-box{
+    float: left;
+    width:25%;
+    margin-left:115px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+blockquote{
+    color: #FFF;
+}
+
+
+cite{
+    margin-bottom: 40px;
+    display: block;
+    font-style: italic;
+    
+}
+
+.who-box img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+     
+    
+}
+
+/* -------------------*/
+/* FOOTER SECTION*/
+/* -------------------*/
+
+.footer-container{
+    background-color: #2a2929;
+    padding: 20px;
+
+        
+}
+
+.footer-list li{
+    float: left;
+    list-style: none;
+    padding-left:80px
+}
+
+.copyright p{
+    text-align: center;
+    color: #898585;
+    margin-right: 30%;
+}
+
+.clearfix:after{
+    content: " ";
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+    
+/*-----------------*/
+    
