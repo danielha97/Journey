@@ -1,7 +1,6 @@
 
 
-html,body{
-    
+*{
     font-family: 'Quicksand','Arial','sans-serif';
     font-weight: 300px;
     font-size: 20px;
@@ -9,9 +8,7 @@ html,body{
     margin:0 auto;
     padding:0;
     box-sizing: border-box;
-   
 }
-ul, ol {padding:0; margin: 0}
 
 /* -------------------*/
 /* FIRST PAGE*/
@@ -28,18 +25,18 @@ header{
 .main-nav {
     list-style: none;
     float: right;
-
 }
 
-.main-nav li{
+.main-nav ul li{
     display: inline-block;
-    margin-top: 10%;
-    margin-right: 80px;
+    margin-top: 15%;
+    margin-right: 50px;
     color: #fff;
     padding: 15px;
-    font-size: 130%;
-    font-weight:400;
-    
+}
+
+.main-nav ul li a{
+    font-size: 25px;
 }
 
 .white-logo{
@@ -140,7 +137,8 @@ h3{
 .about-section h3{
     background-color: #f7f7f7;
     margin-bottom: 0;
-    padding: 2% 15% 2% 15%;
+    font-size: 18px;
+    padding: 2% 15%;
 }
 .display-box{
     position: relative;
@@ -179,31 +177,19 @@ h3{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #6bb9f07c;
+    background-color:#2a292936;
     z-index: -5;
     visibility: hidden;
 }
 
 .cover-container{
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
     margin: 10% auto;
     background: #f7f7f7;
     border-radius: 20px;
     justify-content: center;
 
-}
-
-.cover-container i{
-    position: absolute;
-    width: 50px;
-    margin-left: 46%;
-    margin-top: -90px;
-}
-
-.cover-content{
-    display: block;
-    padding:80px;
 }
 .show-cover{
     z-index: 5;
@@ -213,44 +199,50 @@ h3{
 /* -------------------*/
 /* HOW SECTION*/
 /* -------------------*/
+.section-how{
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+}
 
+.section-how h2{
+    padding-bottom: 25px;
+    color: #56a8e2;
+}
 
 .how-container{
     width:100%;
-    display: table;
-        
+    display: flex;
+    padding: 0 20%;
 }
 
 .how-box{
-    width: 25%;
-    float:left;
-    display: block;
-    background-color: #f7f7f7;
-    border-radius:10%;
-    margin:50px 0px 50px 120px;
-    box-shadow: #cecbf5 2px 2px 2px;
-    
-        
+    width: 100%;
+    height: 250px;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: #cecbf5 3px 3px 1px;  
+    text-align: center;    
+    opacity: 0.65;
+    cursor: pointer;
 }
 
-.how-title{
-    color: #6BB9F0;
-    margin-left: 40%;
-    margin-top: 30px;
-
+.how-box h3{
+    font-weight: bold;
 }
 
-
-.how-box div{
-    font-size: 230%;
-    font-weight: 500;
-    
+.how-box img{
+    width: 150px;
+    margin-top: 20px;
 }
 
-
-.how-box p{
-    margin: 30px;
+.how-box:hover{
+    opacity: 1;
+    box-shadow: #56a8e2 3px 3px 1px;  
+    transition: ease-in-out 0.2s;
 }
+
 
 /* -------------------*/
 /* WHO SECTION*/
@@ -261,12 +253,17 @@ h3{
     background-size:cover;
     width: 100%;
     background-attachment: fixed;
+    padding: 25px;
+}
+
+.section-who h2{
+    color: #FFF;
 }
 
 .who-container{
     width:80%;
     margin: 0 auto;
-    
+    display: flex;
 }
 
 .testimony{
@@ -274,7 +271,6 @@ h3{
 }
 
 .who-box{
-    float: left;
     width:25%;
     margin-left:115px;
 }
@@ -305,7 +301,7 @@ cite{
     height:150px;
     border-radius: 50%;
     margin-bottom: 15px;
-     
+    object-fit:cover;
     
 }
 
