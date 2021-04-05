@@ -5,15 +5,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <title>Journey</title>      
 </head>     
-<header>
+<header id="home">
     <nav>
         <img src="css/img/logo-white.png" class="white-logo">
             <div class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Accomodation</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home" class="link">Home</a></li>
+                <li><a href="#loc" class="link">Locations</a></li>
+                <li><a href="#accomo" class="link">Accomodations</a></li>
+                <li><a href="#abo" class="link">About</a></li>
             </ul>
             </div>
             <div class="first-page">
@@ -22,149 +22,872 @@
     </nav>
 </header>
     <body>
-        <section class="about-section">
+        <section class="about-section" id="loc">
                 <h2>Where to next?</h2>
-            <div class="about-text">
                 <h3>Journey is a platform where Donec augue eros, dignissim vel dignissim vitae, scelerisque in turpis. Etiam eleifend augue a massa convallis, vel gravida nunc condimentum. Duis non tristique elit, eleifend feugiat libero. Quisque vulputate, ante tempus blandit viverra, justo tellus gravida purus, quis tristique libero sem at tellus. Aenean consectetur sed felis consectetur vestibulum.</h3>
-            </div>
             <div class="display-box">
-                <ul class="countries clearfix">
-
-                     <li><div class="location">
+                <ul class="countries">
+                     <li>
+                         <div class="location">
                          <div class="cover">
                          <div class="cover-container">
+                        <img class="cross" src="/css/img/cross.png" alt="">
                          <h2>Bali</h2>
+                         <div class="tab-container">
+                            <div class="tab-block">
+                                <div class="name-block">
+                                    <div class="name show"data-link="Act"><h3>Activities</h3></div>
+                                    <div class="name"data-link="Fli"><h3>Flights</h3></div>
+                                    <div class="name"data-link="Acc"><h3>Accommodations</h3></div>
+                                </div>
+                                <div class="content show" id="Act">
+                                <h3 class="tab-title">Activities</h3>
+                                <div class="activities">
+                                    <div class="activity">
+                                        <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                        <h4>Food & Drinks</h4>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                        <h4>Shopping & Fashion</h4>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                        <h4>Tours & Adventure</h4>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="content" id="Fli">
+                                    <h3 class="tab-title">Air Lines</h3>
+                                    <div class="flights">
+                                        <div class="flight-container">
+                                           <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                           <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                           <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                        </div>
+                                        <div class="flight-container">
+                                            <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                            <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                            <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="content" id="Acc">
+                                    <h3 class="tab-title">Accommodations</h3>
+                                    <div class="accommodations">
+                                        <div class="accommodation-container">
+                                           <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                           <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                           <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                        </div>
+                                        <div class="accommodation-container">
+                                            <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                            <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                            <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                         </div>
+                                         <div class="accommodation-container">
+                                            <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                            <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                            <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                         </div>
+                                    </div>
+                                    </div>
+                            </div>
+                         </div>
                          </div>
                          </div>
                          <img src="css/img/countries/bali.jpg" alt="bali">
                          </div>
                          </li>
 
-                     <li><div class="location">
-                        <div class="cover">
+
+                         <li>
+                            <div class="location">
+                            <div class="cover">
                             <div class="cover-container">
+                           <img class="cross" src="/css/img/cross.png" alt="">
                             <h2>France</h2>
-                        
+                            <div class="tab-container">
+                               <div class="tab-block">
+                                   <div class="name-block">
+                                       <div class="name show"data-link="Act1"><h3>Activities</h3></div>
+                                       <div class="name"data-link="Fli1"><h3>Flights</h3></div>
+                                       <div class="name"data-link="Acc1"><h3>Accommodations</h3></div>
+                                   </div>
+                                   <div class="content show" id="Act1">
+                                   <h3 class="tab-title">Activities</h3>
+                                   <div class="activities">
+                                       <div class="activity">
+                                           <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                           <h4>Food & Drinks</h4>
+                                       </div>
+                                       <div class="activity">
+                                           <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                           <h4>Shopping & Fashion</h4>
+                                       </div>
+                                       <div class="activity">
+                                           <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                           <h4>Tours & Adventure</h4>
+                                       </div>
+                                   </div>
+                                   </div>
+                                   <div class="content" id="Fli1">
+                                       <h3 class="tab-title">Air Lines</h3>
+                                       <div class="flights">
+                                           <div class="flight-container">
+                                              <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                              <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                              <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                           </div>
+                                           <div class="flight-container">
+                                               <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                               <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                               <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                            </div>
+                                       </div>
+                                   </div>
+                                   <div class="content" id="Acc1">
+                                       <h3 class="tab-title">Accommodations</h3>
+                                       <div class="accommodations">
+                                           <div class="accommodation-container">
+                                              <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                              <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                              <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                           </div>
+                                           <div class="accommodation-container">
+                                               <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                               <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                               <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                            </div>
+                                            <div class="accommodation-container">
+                                               <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                               <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                               <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                            </div>
+                                       </div>
+                                       </div>
+                               </div>
                             </div>
                             </div>
-                            <img src="css/img/countries/france.jpg" alt="france">
+                            </div>
+                            <img src="css/img/countries/france.jpg" alt="bali">
                             </div>
                             </li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>Hawaii</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/hawaii.jpg" alt="hawaii"></div></li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>Italy</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/italy.jpg" alt="italy"></div></li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>Japan</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/japan.jpg" alt="japan"></div></li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>London</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/london.jpg" alt="london"></div></li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>Malaysia</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/malaysia.jpg" alt="malaysia"></div></li>
-                     <li><div class="location">
-                        <div class="cover">
-                            <div class="cover-container">
-                            <h2>Thailand</h2>
-                            <div class="cover-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime ut molestias earum dicta praesentium, laborum quasi dolor repellendus quis impedit nemo similique perspiciatis fugit, laboriosam aut! Voluptate, architecto cupiditate?</div>
-                            </div>
-                            </div><img src="css/img/countries/thailand.jpg" alt="thailand"></div></li>
+
+                            <li>
+                                <div class="location">
+                                <div class="cover">
+                                <div class="cover-container">
+                               <img class="cross" src="/css/img/cross.png" alt="">
+                                <h2>Hawaii</h2>
+                                <div class="tab-container">
+                                   <div class="tab-block">
+                                       <div class="name-block">
+                                           <div class="name show"data-link="Act2"><h3>Activities</h3></div>
+                                           <div class="name"data-link="Fli2"><h3>Flights</h3></div>
+                                           <div class="name"data-link="Acc2"><h3>Accommodations</h3></div>
+                                       </div>
+                                       <div class="content show" id="Act2">
+                                       <h3 class="tab-title">Activities</h3>
+                                       <div class="activities">
+                                           <div class="activity">
+                                               <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                               <h4>Food & Drinks</h4>
+                                           </div>
+                                           <div class="activity">
+                                               <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                               <h4>Shopping & Fashion</h4>
+                                           </div>
+                                           <div class="activity">
+                                               <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                               <h4>Tours & Adventure</h4>
+                                           </div>
+                                       </div>
+                                       </div>
+                                       <div class="content" id="Fli2">
+                                           <h3 class="tab-title">Air Lines</h3>
+                                           <div class="flights">
+                                               <div class="flight-container">
+                                                  <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                  <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                  <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                               </div>
+                                               <div class="flight-container">
+                                                   <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                   <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                   <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                </div>
+                                           </div>
+                                       </div>
+                                       <div class="content" id="Acc2">
+                                           <h3 class="tab-title">Accommodations</h3>
+                                           <div class="accommodations">
+                                               <div class="accommodation-container">
+                                                  <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                  <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                  <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                               </div>
+                                               <div class="accommodation-container">
+                                                   <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                   <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                   <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                </div>
+                                                <div class="accommodation-container">
+                                                   <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                   <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                   <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                </div>
+                                           </div>
+                                           </div>
+                                   </div>
+                                </div>
+                                </div>
+                                </div>
+                                <img src="css/img/countries/hawaii.jpg" alt="bali">
+                                </div>
+                                </li>
+
+                                <li>
+                                    <div class="location">
+                                    <div class="cover">
+                                    <div class="cover-container">
+                                   <img class="cross" src="/css/img/cross.png" alt="">
+                                    <h2>Italy</h2>
+                                    <div class="tab-container">
+                                       <div class="tab-block">
+                                           <div class="name-block">
+                                               <div class="name show"data-link="Act3"><h3>Activities</h3></div>
+                                               <div class="name"data-link="Fli3"><h3>Flights</h3></div>
+                                               <div class="name"data-link="Acc3"><h3>Accommodations</h3></div>
+                                           </div>
+                                           <div class="content show" id="Act3">
+                                           <h3 class="tab-title">Activities</h3>
+                                           <div class="activities">
+                                               <div class="activity">
+                                                   <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                                   <h4>Food & Drinks</h4>
+                                               </div>
+                                               <div class="activity">
+                                                   <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                                   <h4>Shopping & Fashion</h4>
+                                               </div>
+                                               <div class="activity">
+                                                   <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                                   <h4>Tours & Adventure</h4>
+                                               </div>
+                                           </div>
+                                           </div>
+                                           <div class="content" id="Fli3">
+                                               <h3 class="tab-title">Air Lines</h3>
+                                               <div class="flights">
+                                                   <div class="flight-container">
+                                                      <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                      <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                      <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                                   </div>
+                                                   <div class="flight-container">
+                                                       <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                       <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                       <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                           <div class="content" id="Acc3">
+                                               <h3 class="tab-title">Accommodations</h3>
+                                               <div class="accommodations">
+                                                   <div class="accommodation-container">
+                                                      <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                      <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                      <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                                   </div>
+                                                   <div class="accommodation-container">
+                                                       <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                       <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                       <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                    </div>
+                                                    <div class="accommodation-container">
+                                                       <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                       <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                       <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                    </div>
+                                               </div>
+                                               </div>
+                                       </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <img src="css/img/countries/italy.jpg" alt="bali">
+                                    </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="location">
+                                        <div class="cover">
+                                        <div class="cover-container">
+                                       <img class="cross" src="/css/img/cross.png" alt="">
+                                        <h2>Japan</h2>
+                                        <div class="tab-container">
+                                           <div class="tab-block">
+                                               <div class="name-block">
+                                                   <div class="name show"data-link="Act4"><h3>Activities</h3></div>
+                                                   <div class="name"data-link="Fli4"><h3>Flights</h3></div>
+                                                   <div class="name"data-link="Acc4"><h3>Accommodations</h3></div>
+                                               </div>
+                                               <div class="content show" id="Act4">
+                                               <h3 class="tab-title">Activities</h3>
+                                               <div class="activities">
+                                                   <div class="activity">
+                                                       <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                                       <h4>Food & Drinks</h4>
+                                                   </div>
+                                                   <div class="activity">
+                                                       <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                                       <h4>Shopping & Fashion</h4>
+                                                   </div>
+                                                   <div class="activity">
+                                                       <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                                       <h4>Tours & Adventure</h4>
+                                                   </div>
+                                               </div>
+                                               </div>
+                                               <div class="content" id="Fli4">
+                                                   <h3 class="tab-title">Air Lines</h3>
+                                                   <div class="flights">
+                                                       <div class="flight-container">
+                                                          <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                          <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                          <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                                       </div>
+                                                       <div class="flight-container">
+                                                           <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                           <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                           <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                               <div class="content" id="Acc4">
+                                                   <h3 class="tab-title">Accommodations</h3>
+                                                   <div class="accommodations">
+                                                       <div class="accommodation-container">
+                                                          <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                          <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                          <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                                       </div>
+                                                       <div class="accommodation-container">
+                                                           <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                           <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                           <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                        </div>
+                                                        <div class="accommodation-container">
+                                                           <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                           <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                           <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                        </div>
+                                                   </div>
+                                                   </div>
+                                           </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <img src="css/img/countries/japan.jpg" alt="bali">
+                                        </div>
+                                        </li>
+                                        <li>
+                                            <div class="location">
+                                            <div class="cover">
+                                            <div class="cover-container">
+                                           <img class="cross" src="/css/img/cross.png" alt="">
+                                            <h2>London</h2>
+                                            <div class="tab-container">
+                                               <div class="tab-block">
+                                                   <div class="name-block">
+                                                       <div class="name show"data-link="Act5"><h3>Activities</h3></div>
+                                                       <div class="name"data-link="Fli5"><h3>Flights</h3></div>
+                                                       <div class="name"data-link="Acc5"><h3>Accommodation</h3></div>
+                                                   </div>
+                                                   <div class="content show" id="Act5">
+                                                   <h3 class="tab-title">Activities</h3>
+                                                   <div class="activities">
+                                                       <div class="activity">
+                                                           <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                                           <h4>Food & Drinks</h4>
+                                                       </div>
+                                                       <div class="activity">
+                                                           <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                                           <h4>Shopping & Fashion</h4>
+                                                       </div>
+                                                       <div class="activity">
+                                                           <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                                           <h4>Tours & Adventure</h4>
+                                                       </div>
+                                                   </div>
+                                                   </div>
+                                                   <div class="content" id="Fli5">
+                                                       <h3 class="tab-title">Air Lines</h3>
+                                                       <div class="flights">
+                                                           <div class="flight-container">
+                                                              <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                              <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                              <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                                           </div>
+                                                           <div class="flight-container">
+                                                               <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                               <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                               <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                            </div>
+                                                       </div>
+                                                   </div>
+                                                   <div class="content" id="Acc5">
+                                                       <h3 class="tab-title">Accommodations</h3>
+                                                       <div class="accommodations">
+                                                           <div class="accommodation-container">
+                                                              <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                              <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                              <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                                           </div>
+                                                           <div class="accommodation-container">
+                                                               <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                               <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                               <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                            </div>
+                                                            <div class="accommodation-container">
+                                                               <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                               <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                               <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                            </div>
+                                                       </div>
+                                                       </div>
+                                               </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <img src="css/img/countries/london.jpg" alt="bali">
+                                            </div>
+                                            </li>
+                                            <li>
+                                                <div class="location">
+                                                <div class="cover">
+                                                <div class="cover-container">
+                                               <img class="cross" src="/css/img/cross.png" alt="">
+                                                <h2>Malaysia</h2>
+                                                <div class="tab-container">
+                                                   <div class="tab-block">
+                                                       <div class="name-block">
+                                                           <div class="name show"data-link="Act6"><h3>Activities</h3></div>
+                                                           <div class="name"data-link="Fli6"><h3>Flights</h3></div>
+                                                           <div class="name"data-link="Acc6"><h3>Accommodations</h3></div>
+                                                       </div>
+                                                       <div class="content show" id="Act6">
+                                                       <h3 class="tab-title">Activities</h3>
+                                                       <div class="activities">
+                                                           <div class="activity">
+                                                               <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                                               <h4>Food & Drinks</h4>
+                                                           </div>
+                                                           <div class="activity">
+                                                               <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                                               <h4>Shopping & Fashion</h4>
+                                                           </div>
+                                                           <div class="activity">
+                                                               <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                                               <h4>Tours & Adventure</h4>
+                                                           </div>
+                                                       </div>
+                                                       </div>
+                                                       <div class="content" id="Fli6">
+                                                           <h3 class="tab-title">Air Lines</h3>
+                                                           <div class="flights">
+                                                               <div class="flight-container">
+                                                                  <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                                  <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                                  <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                                               </div>
+                                                               <div class="flight-container">
+                                                                   <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                                   <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                                   <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                                </div>
+                                                           </div>
+                                                       </div>
+                                                       <div class="content" id="Acc6">
+                                                           <h3 class="tab-title">Accommodations</h3>
+                                                           <div class="accommodations">
+                                                               <div class="accommodation-container">
+                                                                  <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                                  <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                                  <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                                               </div>
+                                                               <div class="accommodation-container">
+                                                                   <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                                   <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                                   <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                                </div>
+                                                                <div class="accommodation-container">
+                                                                   <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                                   <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                                   <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                                </div>
+                                                           </div>
+                                                           </div>
+                                                   </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <img src="css/img/countries/malaysia.jpg" alt="bali">
+                                                </div>
+                                                </li>
+                                                <li>
+                                                    <div class="location">
+                                                    <div class="cover">
+                                                    <div class="cover-container">
+                                                   <img class="cross" src="/css/img/cross.png" alt="">
+                                                    <h2>Thailand</h2>
+                                                    <div class="tab-container">
+                                                       <div class="tab-block">
+                                                           <div class="name-block">
+                                                               <div class="name show"data-link="Act7"><h3>Activities</h3></div>
+                                                               <div class="name"data-link="Fli7"><h3>Flights</h3></div>
+                                                               <div class="name"data-link="Acc7"><h3>Accommodations</h3></div>
+                                                           </div>
+                                                           <div class="content show" id="Act7">
+                                                           <h3 class="tab-title">Activities</h3>
+                                                           <div class="activities">
+                                                               <div class="activity">
+                                                                   <img class="a-image" src="/css/img/pexels-vincent-rivaud-2147491.jpg" alt="">
+                                                                   <h4>Food & Drinks</h4>
+                                                               </div>
+                                                               <div class="activity">
+                                                                   <img class="a-image" src="/css/img/pexels-burst-374894.jpg" alt="">
+                                                                   <h4>Shopping & Fashion</h4>
+                                                               </div>
+                                                               <div class="activity">
+                                                                   <img class="a-image" src="/css/img/pexels-te-lensfix-1371360.jpg" alt="">
+                                                                   <h4>Tours & Adventure</h4>
+                                                               </div>
+                                                           </div>
+                                                           </div>
+                                                           <div class="content" id="Fli7">
+                                                               <h3 class="tab-title">Air Lines</h3>
+                                                               <div class="flights">
+                                                                   <div class="flight-container">
+                                                                      <div class="flight"><img src="/css/img/flights/1.png" alt=""><h3>Take Off!</h3></div>
+                                                                      <div class="flight"><img src="/css/img/flights/2.png" alt=""><h3>Beyond</h3></div>
+                                                                      <div class="flight"><img src="/css/img/flights/3.png" alt=""><h3>Aear</h3></div>
+                                                                   </div>
+                                                                   <div class="flight-container">
+                                                                       <div class="flight"><img src="/css/img/flights/4.png" alt=""><h3>Pilot</h3></div>
+                                                                       <div class="flight"><img src="/css/img/flights/5.png" alt=""><h3>Plain</h3></div>
+                                                                       <div class="flight"><img src="/css/img/flights/6.png" alt=""><h3>Rokit</h3></div>
+                                                                    </div>
+                                                               </div>
+                                                           </div>
+                                                           <div class="content" id="Acc7">
+                                                               <h3 class="tab-title">Accommodations</h3>
+                                                               <div class="accommodations">
+                                                                   <div class="accommodation-container">
+                                                                      <div class="place"><img src="/css/img/accomodation/1.png" alt=""><h3>Flyff</h3></div>
+                                                                      <div class="place"><img src="/css/img/accomodation/9.png" alt=""><h3>Air D&D</h3></div>
+                                                                      <div class="place"><img src="/css/img/accomodation/2.png" alt=""><h3>Pakin'</h3></div>
+                                                                   </div>
+                                                                   <div class="accommodation-container">
+                                                                       <div class="place"><img src="/css/img/accomodation/3.png" alt=""><h3>Inn & Out</h3></div>
+                                                                       <div class="place"><img src="/css/img/accomodation/4.png" alt=""><h3>Welcome</h3></div>
+                                                                       <div class="place"><img src="/css/img/accomodation/5.png" alt=""><h3>Aero Drop</h3></div>
+                                                                    </div>
+                                                                    <div class="accommodation-container">
+                                                                       <div class="place"><img src="/css/img/accomodation/6.png" alt=""><h3>Kastle</h3></div>
+                                                                       <div class="place"><img src="/css/img/accomodation/7.png" alt=""><h3>Moove</h3></div>
+                                                                       <div class="place"><img src="/css/img/accomodation/8.png" alt=""><h3>Staye</h3></div>
+                                                                    </div>
+                                                               </div>
+                                                               </div>
+                                                       </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <img src="css/img/countries/thailand.jpg" alt="bali">
+                                                    </div>
+                                                   </li>
                 </ul>
             </div>
         </section>
     
     
-    <section class="section-how">
-            <h2>Accomodation</h2>
+    <section class="section-how" id="accomo">
+            <h2>Accommodation</h2>
     <div class="how-container">
         <div class="how-box">
                 <h3>Flyff</h3>
                 <img src="/css/img/accomodation/1.png" alt="">
+                <div class="accomm-container">
+                    <div class="acc-box">
+                        <img src="/css/img/accom.png" class="x" alt="">
+                        <h3>Flyff</h3>
+                        <div class="acc-content">
+                            <div class="house-container">
+                            <div class="house">
+                                <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                <h4>Entire Homes</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                <h4>Unique Stays</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                <h4>Nature</h4>
+                            </div>
+                            </div>
+                            <button class="acc-btn">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
             </div>
          <div class="how-box">
                 <h3>Air D&D</h3>
                 <img src="/css/img/accomodation/9.png" alt="">   
+                <div class="accomm-container">
+                    <div class="acc-box">
+                        <img src="/css/img/accom.png" class="x" alt="">
+                        <h3>Ait D&D</h3>
+                        <div class="acc-content">
+                            <div class="house-container">
+                            <div class="house">
+                                <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                <h4>Entire Homes</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                <h4>Unique Stays</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                <h4>Nature</h4>
+                            </div>
+                            </div>
+                            <button class="acc-btn">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
             </div>
          <div class="how-box">
                 <h3>Pakin'</h3>
                 <img src="/css/img/accomodation/2.png" alt="">
+                <div class="accomm-container">
+                    <div class="acc-box">
+                        <img src="/css/img/accom.png" class="x" alt="">
+                        <h3>Pakin'</h3>
+                        <div class="acc-content">
+                            <div class="house-container">
+                            <div class="house">
+                                <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                <h4>Entire Homes</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                <h4>Unique Stays</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                <h4>Nature</h4>
+                            </div>
+                            </div>
+                            <button class="acc-btn">Visit Site</button>
+                        </div>
+                    </div>
+                </div>
             </div>    
         </div>
         <div class="how-container">
             <div class="how-box">
                     <h3>Inn & Out</h3>
-                <img src="/css/img/accomodation/3.png" alt="">    
+                <img src="/css/img/accomodation/3.png" alt="">   
+                <div class="accomm-container">
+                    <div class="acc-box">
+                        <img src="/css/img/accom.png" class="x" alt="">
+                        <h3>Inn & Out</h3>
+                        <div class="acc-content">
+                            <div class="house-container">
+                            <div class="house">
+                                <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                <h4>Entire Homes</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                <h4>Unique Stays</h4>
+                            </div>
+                            <div class="house">
+                                <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                <h4>Nature</h4>
+                            </div>
+                            </div>
+                            <button class="acc-btn">Visit Site</button>
+                        </div>
+                    </div>
+                </div> 
                 </div>
              <div class="how-box">
                     <h3>Welcome</h3>
                     <img src="/css/img/accomodation/4.png" alt="">  
+                    <div class="accomm-container">
+                        <div class="acc-box">
+                            <img src="/css/img/accom.png" class="x" alt="">
+                            <h3>Welcome</h3>
+                            <div class="acc-content">
+                                <div class="house-container">
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                    <h4>Entire Homes</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                    <h4>Unique Stays</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                    <h4>Nature</h4>
+                                </div>
+                                </div>
+                                <button class="acc-btn">Visit Site</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
              <div class="how-box">
                     <h3>Aero Drop</h3>
-                    <img src="/css/img/accomodation/5.png" alt="">    
+                    <img src="/css/img/accomodation/5.png" alt="">   
+                    <div class="accomm-container">
+                        <div class="acc-box">
+                            <img src="/css/img/accom.png" class="x" alt="">
+                            <h3>Aero Drop</h3>
+                            <div class="acc-content">
+                                <div class="house-container">
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                    <h4>Entire Homes</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                    <h4>Unique Stays</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                    <h4>Nature</h4>
+                                </div>
+                                </div>
+                                <button class="acc-btn">Visit Site</button>
+                            </div>
+                        </div>
+                    </div> 
                 </div>    
         </div>
         <div class="how-container">
             <div class="how-box">
                     <h3>Kastle</h3>
-                    <img src="/css/img/accomodation/6.png" alt="">   
+                    <img src="/css/img/accomodation/6.png" alt=""> 
+                    <div class="accomm-container">
+                        <div class="acc-box">
+                            <img src="/css/img/accom.png" class="x" alt="">
+                            <h3>Kastle</h3>
+                            <div class="acc-content">
+                                <div class="house-container">
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                    <h4>Entire Homes</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                    <h4>Unique Stays</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                    <h4>Nature</h4>
+                                </div>
+                                </div>
+                                <button class="acc-btn">Visit Site</button>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
              <div class="how-box">
                     <h3>Moove</h3>
                     <img src="/css/img/accomodation/7.png" alt="">   
+                    <div class="accomm-container">
+                        <div class="acc-box">
+                            <img src="/css/img/accom.png" class="x" alt="">
+                            <h3>Moove</h3>
+                            <div class="acc-content">
+                                <div class="house-container">
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                    <h4>Entire Homes</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                    <h4>Unique Stays</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                    <h4>Nature</h4>
+                                </div>
+                                </div>
+                                <button class="acc-btn">Visit Site</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
              <div class="how-box">
                     <h3>Staye</h3>
                     <img src="/css/img/accomodation/8.png" alt="">   
+                    <div class="accomm-container">
+                        <div class="acc-box">
+                            <img src="/css/img/accom.png" class="x" alt="">
+                            <h3>Staye</h3>
+                            <div class="acc-content">
+                                <div class="house-container">
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-binyamin-mellish-106399.jpg" alt="">
+                                    <h4>Entire Homes</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-asad-photo-maldives-1449729.jpg" alt="">
+                                    <h4>Unique Stays</h4>
+                                </div>
+                                <div class="house">
+                                    <img src="/css/img/house/pexels-louis-2083459.jpg" alt="">
+                                    <h4>Nature</h4>
+                                </div>
+                                </div>
+                                <button class="acc-btn">Visit Site</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>    
         </div>
         
     
     </section>
     
-    <section class="section-who clearfix">
-            <h2>About</h2>
-
+    <section class="section-who" id="abo">
+            <h2>What is Journey?</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique a architecto quasi officiis impedit natus fuga culpa magni placeat voluptas adipisci blanditiis aliquid sapiente aperiam recusandae, necessitatibus, sint, dolor repellat unde tenetur minus ullam ab libero. Tempore tempora debitis voluptates dolore sed aliquid excepturi vel ad, sapiente necessitatibus nostrum reiciendis quaerat in sunt totam quibusdam adipisci aperiam cum voluptas magnam!</p>
         <div class="who-container">
             <div class="who-box">
            <blockquote>
                     <cite><img src="css/img/test-1.jpg">John Smith</cite>
-                    Morbi eget sem ex. Nullam suscipit libero vitae dui sollicitudin, vitae malesuada ante ti
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe consequatur quisquam reiciendis?
                     </blockquote>  
             </div>
             <div class="who-box">
            <blockquote>
                     <cite><img src="css/img/test-2.jpg">Karen Harrison</cite>
-                    Morbi eget sem ex. Nullam suscipit libero vitae dui sollicitudin, vitae malesuada ante ti
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error non a repellat consequuntur. Voluptatibus, ratione.
                     </blockquote>  
             </div>
             <div class="who-box">
            <blockquote>
                     <cite><img src="css/img/test-3.jpg">Anthony Miles</cite>
-                    Morbi eget sem ex. Nullam suscipit libero vitae dui sollicitudin, vitae malesuada ante ti
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolorem vitae tempore animi eaque eius aut quod? Optio, eum dignissimos?
                     </blockquote>  
             </div>
         </div>
@@ -175,10 +898,10 @@
         <div class="footer-box">
                 <div>
                 <ul class="footer-list">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
+                    <li>Help & Support</li>
+                    <li>Terms of Use</li>
+                    <li>Feedback</li>
+                    <li>Fare Types</li>
                 </ul>
                 </div>
             
