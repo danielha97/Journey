@@ -555,6 +555,9 @@ cite{
     display:block;
     height: 0;
     visibility: hidden;
+   
+
+@media all and {max-width: 1200px} {
+
     
-/*-----------------*/
-    
+}    
